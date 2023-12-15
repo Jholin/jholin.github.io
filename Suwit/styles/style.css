@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #eee;
+    background-image: url("../assets/img/bg.png");
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+
+/* suwit jawa */
+
+.container {
+    width: 500px;
+    margin: 150px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card {
+    border: solid 5px black;
+    border-radius: 0 0 15px 15px;
+}
+
+header {
+    background-color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+
+h3 {
+    background-color: #000;
+    width: 25%;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+#player-piece, #computer-piece {
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+img {
+    height: 100px;
+}
+
+#computer-piece img {
+    padding-bottom: 25px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    list-style: none;
+}
+
+.info {
+    border-radius: 25px;
+    border: solid white 3px;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    margin-left: 183px;
+    margin-top: -28px;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.gajah, .orang, .semut {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.gajah:hover, .semut:hover, .orang:hover, .active{
+    box-shadow: 0 0 10px 5px #aaa;
+}

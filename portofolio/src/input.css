@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    * {
+
+        /* border: solid #ff6b6b 1px; */
+    }
+}
+
+@Layer utilities {
+    .test {
+        @apply bg-black sm:bg-blue-500 md:bg-green-500 lg:bg-orange-500 xl:bg-red-500 2xl:bg-yellow-500
+    }
+}
